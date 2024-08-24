@@ -1,9 +1,0 @@
-
-syntax: glob
-
-syntax: regexp
-^\.git/
-
-subinclude:Core/.hgignore
-subinclude:View/.hgignore
-
