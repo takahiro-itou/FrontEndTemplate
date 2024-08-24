@@ -10,5 +10,6 @@ obj/
 *.suo
 
 syntax: regexp
+^\.git/
 ^.vs/
 
