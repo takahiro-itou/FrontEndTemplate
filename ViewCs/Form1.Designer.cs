@@ -28,30 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnRun = new System.Windows.Forms.Button();
-            this.txtCommand = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
+            this.txtCommand = new System.Windows.Forms.TextBox();
+            this.btnRun = new System.Windows.Forms.Button();
 
             this.SuspendLayout();
+
             //
-            // btnRun
-            //
-            this.btnRun.Location = new System.Drawing.Point(12, 64);
-            this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(110, 31);
-            this.btnRun.TabIndex = 7;
-            this.btnRun.Text = "btnRun";
-            this.btnRun.UseVisualStyleBackColor = true;
-            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
-            //
-            // txtCommand
-            //
-            this.txtCommand.Location = new System.Drawing.Point(71, 21);
-            this.txtCommand.Name = "txtCommand";
-            this.txtCommand.Size = new System.Drawing.Size(332, 23);
-            this.txtCommand.TabIndex = 6;
-            //
-            // Label1
+            //  Label1
             //
             this.Label1.AutoSize = true;
             this.Label1.Location = new System.Drawing.Point(12, 21);
@@ -60,7 +44,25 @@
             this.Label1.TabIndex = 5;
             this.Label1.Text = "Label1";
             //
-            // Form1
+            //  txtCommand
+            //
+            this.txtCommand.Location = new System.Drawing.Point(71, 21);
+            this.txtCommand.Name = "txtCommand";
+            this.txtCommand.Size = new System.Drawing.Size(332, 23);
+            this.txtCommand.TabIndex = 6;
+            //
+            //  btnRun
+            //
+            this.btnRun.Location = new System.Drawing.Point(12, 64);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(110, 31);
+            this.btnRun.TabIndex = 7;
+            this.btnRun.Text = "btnRun";
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
+
+            //
+            //  Form1
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -78,8 +80,8 @@
 
         #endregion
 
-        internal Button btnRun;
-        internal TextBox txtCommand;
         internal Label Label1;
+        internal TextBox txtCommand;
+        internal Button btnRun;
     }
 }
