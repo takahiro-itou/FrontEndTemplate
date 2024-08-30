@@ -29,8 +29,8 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFileExit = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.CountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuRun = New System.Windows.Forms.ToolStripMenuItem()
+        Me.mnuRunCommand = New System.Windows.Forms.ToolStripMenuItem()
 
         Me.mnuMain.SuspendLayout()
         Me.SuspendLayout()
@@ -38,7 +38,7 @@ Partial Class Form1
         '
         ' mnuMain
         '
-        Me.mnuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile, Me.RunToolStripMenuItem})
+        Me.mnuMain.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuFile, Me.mnuRun})
         Me.mnuMain.Location = New System.Drawing.Point(0, 0)
         Me.mnuMain.Name = "mnuMain"
         Me.mnuMain.Size = New System.Drawing.Size(516, 24)
@@ -57,6 +57,19 @@ Partial Class Form1
         Me.mnuFileExit.Name = "mnuFileExit"
         Me.mnuFileExit.Size = New System.Drawing.Size(180, 22)
         Me.mnuFileExit.Text = "E&xit"
+        '
+        ' mnuRun
+        '
+        Me.mnuRun.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.mnuRunCommand})
+        Me.mnuRun.Name = "mnuRun"
+        Me.mnuRun.Size = New System.Drawing.Size(40, 20)
+        Me.mnuRun.Text = "&Run"
+        '
+        ' mnuRunCommand
+        '
+        Me.mnuRunCommand.Name = "mnuRunCommand"
+        Me.mnuRunCommand.Size = New System.Drawing.Size(180, 22)
+        Me.mnuRunCommand.Text = "&Count"
 
         '
         ' Label1
@@ -75,7 +88,7 @@ Partial Class Form1
         Me.txtCommand.Size = New System.Drawing.Size(332, 23)
         Me.txtCommand.TabIndex = 2
         '
-        'Button1
+        ' Button1
         '
         Me.Button1.Location = New System.Drawing.Point(22, 93)
         Me.Button1.Name = "Button1"
@@ -84,24 +97,12 @@ Partial Class Form1
         Me.Button1.Text = "Button1"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'OpenFileDialog1
+        ' OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+
         '
-        'RunToolStripMenuItem
-        '
-        Me.RunToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CountToolStripMenuItem})
-        Me.RunToolStripMenuItem.Name = "RunToolStripMenuItem"
-        Me.RunToolStripMenuItem.Size = New System.Drawing.Size(40, 20)
-        Me.RunToolStripMenuItem.Text = "&Run"
-        '
-        'CountToolStripMenuItem
-        '
-        Me.CountToolStripMenuItem.Name = "CountToolStripMenuItem"
-        Me.CountToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
-        Me.CountToolStripMenuItem.Text = "&Count"
-        '
-        'Form1
+        ' Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -127,7 +128,7 @@ Partial Class Form1
     Friend WithEvents mnuMain As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuFileExit As ToolStripMenuItem
-    Friend WithEvents RunToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents CountToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents mnuRun As ToolStripMenuItem
+    Friend WithEvents mnuRunCommand As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
