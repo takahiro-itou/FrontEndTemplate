@@ -4,4 +4,3 @@
 msbuild /t:Clean
 msbuild /restore /t:Rebuild
 ```
-
