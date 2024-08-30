@@ -22,9 +22,8 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.txtCommand = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
@@ -32,20 +31,11 @@ Partial Class Form1
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RunToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CountToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'DataGridView1
-        '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(22, 168)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.RowTemplate.Height = 25
-        Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
-        Me.DataGridView1.TabIndex = 0
-        '
-        'Label1
+        ' Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(22, 50)
@@ -54,12 +44,12 @@ Partial Class Form1
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Label1"
         '
-        'TextBox1
+        ' txtCommand
         '
-        Me.TextBox1.Location = New System.Drawing.Point(81, 50)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(332, 23)
-        Me.TextBox1.TabIndex = 2
+        Me.txtCommand.Location = New System.Drawing.Point(81, 50)
+        Me.txtCommand.Name = "txtCommand"
+        Me.txtCommand.Size = New System.Drawing.Size(332, 23)
+        Me.txtCommand.TabIndex = 2
         '
         'Button1
         '
@@ -115,14 +105,13 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 349)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtCommand)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.MenuStrip1)
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "Form1"
         Me.Text = "Form1"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
         Me.ResumeLayout(False)
@@ -130,9 +119,8 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents DataGridView1 As DataGridView
     Friend WithEvents Label1 As Label
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtCommand As TextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
