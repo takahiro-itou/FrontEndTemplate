@@ -89,14 +89,14 @@ Partial Class Form1
         '
         ' btnRun
         '
-        resources.ApplyResources(Me.mnuMain, "btnRun")
+        resources.ApplyResources(Me.btnRun, "btnRun")
         Me.btnRun.Name = "btnRun"
         Me.btnRun.UseVisualStyleBackColor = True
         '
         ' txtOutput
         '
         resources.ApplyResources(Me.txtOutput, "txtOutput")
-        Me.txtOutput.Name = "txtCommand"
+        Me.txtOutput.Name = "txtOutput"
         Me.txtOutput.BackColor = SystemColors.Window
         Me.txtOutput.ReadOnly = True
 
