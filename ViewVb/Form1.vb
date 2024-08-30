@@ -8,7 +8,7 @@
         RunCount(txtCommand.Text)
     End Sub
 
-    Private Sub CountToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CountToolStripMenuItem.Click
+    Private Sub mnuRunCommand_Click(sender As Object, e As EventArgs) Handles mnuRunCommand.Click
         RunCount(txtCommand.Text)
     End Sub
 End Class
