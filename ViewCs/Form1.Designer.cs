@@ -31,6 +31,7 @@
             this.Label1 = new System.Windows.Forms.Label();
             this.txtCommand = new System.Windows.Forms.TextBox();
             this.btnRun = new System.Windows.Forms.Button();
+            this.txtOutput = new System.Windows.Forms.TextBox();
 
             this.SuspendLayout();
 
@@ -60,6 +61,17 @@
             this.btnRun.Text = "btnRun";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
+            //
+            //  txtOutput
+            //
+            this.txtOutput.Location = new System.Drawing.Point(16, 112);
+            this.txtOutput.Name = "txtCommand";
+            this.txtOutput.BackColor = SystemColors.Window;
+            this.txtOutput.Multiline = true;
+            this.txtOutput.ReadOnly = true;
+            this.txtOutput.ScrollBars = ScrollBars.Both;
+            this.txtOutput.Size = new System.Drawing.Size(416, 168);
+            this.txtOutput.TabIndex = 8;
 
             //
             //  Form1
@@ -83,5 +95,6 @@
         internal Label Label1;
         internal TextBox txtCommand;
         internal Button btnRun;
+        internal TextBox txtOutput;
     }
 }
