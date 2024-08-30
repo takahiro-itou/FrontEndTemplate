@@ -259,7 +259,7 @@
     <value>2, 2, 2, 2</value>
   </data>
   <data name="txtCommand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>544, 19</value>
+    <value>560, 19</value>
   </data>
   <data name="txtCommand.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>

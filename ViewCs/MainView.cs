@@ -15,6 +15,21 @@ public partial class MainView : Form
     //
     private void runCommand(string command)
     {
+        using (Process process = new Process())
+        {
+            process.StartInfo.FileName = "ipconfig.exe";
+            process.StartInfo.UseShellExecute = false;
+            process.StartInfo.RedirectStandardInput = false;
+            process.StartInfo.RedirectStandardOutput = true;
+            process.StartInfo.RedirectStandardError = false;
+            process.Start();
+
+            StreamReader reader = process.StandardOutput;
+            string output = reader.ReadToEnd();
+
+            txtOutput.Text = output;
+            process.WaitForExit();
+        }
     }
 
     //----------------------------------------------------------------
