@@ -87,63 +87,43 @@
             //  Label1
             //
             resources.ApplyResources(Label1, "Label1");
-            this.Label1.AutoSize = true;
-            this.Label1.Location = new System.Drawing.Point(12, 21);
             this.Label1.Name = "Label1";
-            this.Label1.Size = new System.Drawing.Size(41, 15);
-            this.Label1.TabIndex = 5;
-            this.Label1.Text = "Label1";
             //
             //  txtCommand
             //
             resources.ApplyResources(txtCommand, "txtCommand");
-            this.txtCommand.Location = new System.Drawing.Point(71, 21);
             this.txtCommand.Name = "txtCommand";
-            this.txtCommand.Size = new System.Drawing.Size(332, 23);
-            this.txtCommand.TabIndex = 6;
             //
             //  btnRun
             //
             resources.ApplyResources(btnRun, "btnRun");
-            this.btnRun.Location = new System.Drawing.Point(12, 64);
             this.btnRun.Name = "btnRun";
-            this.btnRun.Size = new System.Drawing.Size(110, 31);
-            this.btnRun.TabIndex = 7;
-            this.btnRun.Text = "btnRun";
             this.btnRun.UseVisualStyleBackColor = true;
             this.btnRun.Click += this.btnRun_Click;
             //
             //  txtOutput
             //
             resources.ApplyResources(txtOutput, "txtOutput");
-            this.txtOutput.Location = new System.Drawing.Point(16, 112);
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.BackColor = SystemColors.Window;
-            this.txtOutput.Multiline = true;
             this.txtOutput.ReadOnly = true;
-            this.txtOutput.ScrollBars = ScrollBars.Both;
-            this.txtOutput.Size = new System.Drawing.Size(416, 168);
-            this.txtOutput.TabIndex = 8;
 
             //
             //  MainView
             //
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.mnuMain);
             this.Controls.Add(this.Label1);
             this.Controls.Add(this.txtCommand);
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txtOutput);
             this.Name = "MainView";
-            this.Text = "Sample View";
 
             this.mnuMain.ResumeLayout(false);
             this.mnuMain.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
-
         }
 
         #endregion

@@ -118,7 +118,6 @@ Partial Class MainView
         Me.mnuMain.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
-
     End Sub
 
     Friend WithEvents mnuMain As MenuStrip
