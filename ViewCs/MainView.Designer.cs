@@ -63,7 +63,7 @@
             //
             resources.ApplyResources(mnuFileExit, "mnuFileExit");
             this.mnuFileExit.Name = "mnuFileExit";
-            this.mnuFileExit.Click += this.mnuExit_Click;
+            this.mnuFileExit.Click += this.mnuFileExit_Click;
             //
             //  mnuRun
             //
