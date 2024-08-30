@@ -106,10 +106,11 @@ Partial Class Form1
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
-        Me.Controls.Add(Me.btnRun)
-        Me.Controls.Add(Me.txtCommand)
-        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mnuMain)
+        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtCommand)
+        Me.Controls.Add(Me.btnRun)
+        Me.Controls.Add(Me.txtOutput)
         Me.MainMenuStrip = Me.mnuMain
         Me.Name = "Form1"
 
