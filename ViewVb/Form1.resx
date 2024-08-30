@@ -295,5 +295,8 @@
   <data name="txtOutput.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
+  <data name="txtOutput.Text" xml:space="preserve">
+    <value>Outputs</value>
+  </data>
 
 </root>
