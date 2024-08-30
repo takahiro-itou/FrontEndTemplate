@@ -243,11 +243,11 @@
   <data name="&gt;&gt;txtCommand.Name" xml:space="preserve">
     <value>txtCommand</value>
   </data>
-  <data name="&gt;&gt;txtCommand.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;txtCommand.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtCommand.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;txtCommand.ZOrder" xml:space="preserve">
     <value>2</value>
