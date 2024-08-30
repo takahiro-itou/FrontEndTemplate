@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class MainView
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = _
-            New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+            New System.ComponentModel.ComponentResourceManager(GetType(MainView))
 
         Me.mnuMain = New System.Windows.Forms.MenuStrip()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
@@ -101,7 +101,7 @@ Partial Class Form1
         Me.txtOutput.ReadOnly = True
 
         '
-        ' Form1
+        ' MainView
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -112,7 +112,7 @@ Partial Class Form1
         Me.Controls.Add(Me.btnRun)
         Me.Controls.Add(Me.txtOutput)
         Me.MainMenuStrip = Me.mnuMain
-        Me.Name = "Form1"
+        Me.Name = "MainView"
 
         Me.mnuMain.ResumeLayout(False)
         Me.mnuMain.PerformLayout()

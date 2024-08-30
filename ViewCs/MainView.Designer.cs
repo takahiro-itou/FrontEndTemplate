@@ -1,6 +1,6 @@
 ﻿namespace ViewCs
 {
-    partial class Form1
+    partial class MainView
     {
         /// <summary>
         ///  Required designer variable.
@@ -74,7 +74,7 @@
             this.txtOutput.TabIndex = 8;
 
             //
-            //  Form1
+            //  MainView
             //
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -82,8 +82,8 @@
             this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txtCommand);
             this.Controls.Add(this.Label1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "MainView";
+            this.Text = "Sample View";
 
             this.ResumeLayout(false);
             this.PerformLayout();
