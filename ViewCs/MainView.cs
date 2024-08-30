@@ -1,4 +1,6 @@
 ﻿
+using System.Diagnostics;
+
 namespace ViewCs
 {
 
@@ -24,7 +26,7 @@ public partial class MainView : Form
             process.StartInfo.RedirectStandardError = false;
             process.Start();
 
-            StreamReader reader = process.StandardOutput;
+            System.IO.StreamReader reader = process.StandardOutput;
             string output = reader.ReadToEnd();
 
             txtOutput.Text = output;

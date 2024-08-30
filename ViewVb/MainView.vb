@@ -5,7 +5,7 @@ Private Sub RunCommand(ByVal command As String)
 ''    指定したコマンドを実行する。
 ''--------------------------------------------------------------------
 
-    Using process As System.Diagnostics.Process = New Process()
+    Using process As New System.Diagnostics.Process()
         process.StartInfo.FileName = "ipconfig.exe"
         process.StartInfo.UseShellExecute = False
         process.StartInfo.RedirectStandardInput = False
@@ -13,7 +13,7 @@ Private Sub RunCommand(ByVal command As String)
         process.StartInfo.RedirectStandardError = False
         process.Start()
 
-        Dim Reader As StreamReader = process.StandardOutput
+        Dim Reader As System.IO.StreamReader = process.StandardOutput
         Dim output As String = Reader.ReadToEnd()
 
         txtOutput.Text = output
