@@ -24,7 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtCommand = New System.Windows.Forms.TextBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnRun = New System.Windows.Forms.Button()
         Me.mnuMain = New System.Windows.Forms.MenuStrip()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
@@ -88,14 +88,14 @@ Partial Class Form1
         Me.txtCommand.Size = New System.Drawing.Size(332, 23)
         Me.txtCommand.TabIndex = 2
         '
-        ' Button1
+        ' btnRun
         '
-        Me.Button1.Location = New System.Drawing.Point(22, 93)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 31)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Button1"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnRun.Location = New System.Drawing.Point(22, 93)
+        Me.btnRun.Name = "btnRun"
+        Me.btnRun.Size = New System.Drawing.Size(110, 31)
+        Me.btnRun.TabIndex = 3
+        Me.btnRun.Text = "btnRun"
+        Me.btnRun.UseVisualStyleBackColor = True
         '
         ' OpenFileDialog1
         '
@@ -107,7 +107,7 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(516, 349)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnRun)
         Me.Controls.Add(Me.txtCommand)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.mnuMain)
@@ -124,7 +124,7 @@ Partial Class Form1
 
     Friend WithEvents Label1 As Label
     Friend WithEvents txtCommand As TextBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnRun As Button
     Friend WithEvents mnuMain As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuFileExit As ToolStripMenuItem

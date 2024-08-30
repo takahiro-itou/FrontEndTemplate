@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.Button1 = new System.Windows.Forms.Button();
+            this.btnRun = new System.Windows.Forms.Button();
             this.txtCommand = new System.Windows.Forms.TextBox();
             this.Label1 = new System.Windows.Forms.Label();
 
             this.SuspendLayout();
             //
-            // Button1
+            // btnRun
             //
-            this.Button1.Location = new System.Drawing.Point(12, 64);
-            this.Button1.Name = "Button1";
-            this.Button1.Size = new System.Drawing.Size(110, 31);
-            this.Button1.TabIndex = 7;
-            this.Button1.Text = "Button1";
-            this.Button1.UseVisualStyleBackColor = true;
-            this.Button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnRun.Location = new System.Drawing.Point(12, 64);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(110, 31);
+            this.btnRun.TabIndex = 7;
+            this.btnRun.Text = "btnRun";
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
             //
             // txtCommand
             //
@@ -65,7 +65,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.Button1);
+            this.Controls.Add(this.btnRun);
             this.Controls.Add(this.txtCommand);
             this.Controls.Add(this.Label1);
             this.Name = "Form1";
@@ -78,7 +78,7 @@
 
         #endregion
 
-        internal Button Button1;
+        internal Button btnRun;
         internal TextBox txtCommand;
         internal Label Label1;
     }

@@ -8,7 +8,7 @@ namespace ViewCs
             InitializeComponent();
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnRun_Click(object sender, EventArgs e)
         {
 
         }

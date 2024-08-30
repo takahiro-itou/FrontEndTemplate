@@ -4,7 +4,7 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub btnRun_Click(sender As Object, e As EventArgs) Handles btnRun.Click
         RunCount(txtCommand.Text)
     End Sub
 
