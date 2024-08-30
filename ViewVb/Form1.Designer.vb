@@ -22,15 +22,17 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.txtCommand = New System.Windows.Forms.TextBox()
-        Me.btnRun = New System.Windows.Forms.Button()
         Me.mnuMain = New System.Windows.Forms.MenuStrip()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.mnuFile = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuFileExit = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuRun = New System.Windows.Forms.ToolStripMenuItem()
         Me.mnuRunCommand = New System.Windows.Forms.ToolStripMenuItem()
+
+        Me.dlgOpen = New System.Windows.Forms.OpenFileDialog()
+
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtCommand = New System.Windows.Forms.TextBox()
+        Me.btnRun = New System.Windows.Forms.Button()
 
         Me.mnuMain.SuspendLayout()
         Me.SuspendLayout()
@@ -72,6 +74,11 @@ Partial Class Form1
         Me.mnuRunCommand.Text = "&Count"
 
         '
+        ' dlgOpen
+        '
+        Me.dlgOpen.FileName = "dlgOpen"
+
+        '
         ' Label1
         '
         Me.Label1.AutoSize = True
@@ -96,10 +103,6 @@ Partial Class Form1
         Me.btnRun.TabIndex = 3
         Me.btnRun.Text = "btnRun"
         Me.btnRun.UseVisualStyleBackColor = True
-        '
-        ' OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
 
         '
         ' Form1
@@ -122,13 +125,16 @@ Partial Class Form1
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents txtCommand As TextBox
-    Friend WithEvents btnRun As Button
     Friend WithEvents mnuMain As MenuStrip
     Friend WithEvents mnuFile As ToolStripMenuItem
     Friend WithEvents mnuFileExit As ToolStripMenuItem
     Friend WithEvents mnuRun As ToolStripMenuItem
     Friend WithEvents mnuRunCommand As ToolStripMenuItem
-    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+
+    Friend WithEvents dlgOpen As OpenFileDialog
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents txtCommand As TextBox
+    Friend WithEvents btnRun As Button
+
 End Class
