@@ -2,7 +2,7 @@
 name : MSBuild
 
 env :
-  SOLUTION_FILE_PATH : SampleView.sln
+  SOLUTION_FILE_PREFIX : SampleView
 
 jobs :
   build :
@@ -13,7 +13,7 @@ jobs :
 
       matrix :
         build-type : [ Release, Debug ]
-        solution   : [ SampleView.sln, SampleView.NetOld.sln ]
+        target-ver : [ "", .NetOld ]
 
     steps :
       - name : Checkout
@@ -34,7 +34,9 @@ jobs :
       - name : Build
         working-directory : ${{ github.workspace }}
         run  : >
-          msbuild -restore -t:Rebuild -p:Platform=x64 -p:Configuration="${{ matrix.build-type }}" "${{ matrix.solution }}"
+          msbuild -restore -t:Rebuild -p:Platform=x64 -p:Configuration="${{ matrix.build-type }}" "${solution_file}"
+        env  :
+          solution_file : "${{ env.SOLUTION_FILE_PREFIX }}${{ matrix.target-ver }}.sln"
         shell : pwsh
 
 on :
